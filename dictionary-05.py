@@ -4,13 +4,14 @@ favorite_lang = {
     "jen":"python",
     "sarah":"c",
     "edward":"rust",
-    "phil":"python",
-    "renato":"python",
+    "phil":"rust",
+    "renato":"rust",
     "ana":"java",
 }
 
 registered = ["phil","ana"]
 
+python = 0
 i = 1
 
 for name in favorite_lang.keys():
@@ -21,7 +22,7 @@ for name in favorite_lang.keys():
         print(f"{i} - {name.title()} -> Invitation sent")
     i += 1  
 
-python = 0
+
 for py in favorite_lang.values():
     if py == "python":
         python += 1
