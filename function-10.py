@@ -1,13 +1,20 @@
-messages = ["hello","how are you?","great to see you"]
-def show_messages(msgs):
-    print("Here are the messages: ")
-    for msg in messages:
-        print(msg)
+messages = ["hi","how are you?","great to see you"]
+sent_messages = []
+def display_messages(msg_list):
+    for msg in msg_list:
+        print(msg.title())
+
+display_messages(messages)
 
 
-def send_messages(show_msgs,sent_msgs):
-    show_messages(messages)
-    sent_messages = messages[:]
+def send_messages(msg_list,sent_msg_list):
+    while msg_list:
+        current_msg = msg_list.pop()
+        print(f"Sending the current message: {current_msg.title()}")
+        sent_msg_list.append(current_msg)
+    print(f"The following messages have been sent: {sent_msg_list}")
 
-
-send_messages(show_messages,)
+send_messages(messages,sent_messages)
+print(messages)
+print(sent_messages)
+        
