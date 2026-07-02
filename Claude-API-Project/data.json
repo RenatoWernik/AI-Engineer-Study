@@ -86,5 +86,53 @@
     {
         "role": "assistant",
         "content": "Olá, Renato! 👋😊\n\nTudo bem? Em que posso te ajudar?\n\nEstou aqui para o que precisares! 🚀"
+    },
+    {
+        "role": "user",
+        "content": "o que voce sabe sobre mim?"
+    },
+    {
+        "role": "assistant",
+        "content": "Com base no que me contaste ao longo da nossa conversa, sei o seguinte:\n\n- **Nome:** Renato\n- **Idade:** 23 anos\n- **Onde moras:** Lisboa, Portugal 🇵🇹\n- **Onde nasceste:** Natal, Rio Grande do Norte, Brasil 🇧🇷\n- **Interesse:** Tesla Model 3 🚗⚡\n\n---\n\nÉ isso que tenho! Lembrando que só sei o que **tu partilhaste comigo** durante as nossas conversas. 😊\n\nQueres contar mais alguma coisa ou posso ajudar com algo? 🚀"
+    },
+    {
+        "role": "user",
+        "content": "ola"
+    },
+    {
+        "role": "assistant",
+        "content": "Olá, Renato! 👋😊\n\nTudo bem contigo? Como posso te ajudar hoje?\n\nEstou aqui para o que precisares! 💬"
+    },
+    {
+        "role": "user",
+        "content": "ola!"
+    },
+    {
+        "role": "assistant",
+        "content": "Olá, Renato! 👋😄\n\nTudo bem? Que bom te ver por aqui de novo!\n\nEm que posso te ajudar hoje? 🚀"
+    },
+    {
+        "role": "user",
+        "content": "ola,lembra de mim?"
+    },
+    {
+        "role": "assistant",
+        "content": "Olá! 👋😊\n\nClaro que sim! Tu és o **Renato**! \n\nAqui vai o que sei sobre ti:\n\n- **Nome:** Renato\n- **Idade:** 23 anos\n- **Onde moras:** Lisboa, Portugal 🇵🇹\n- **Onde nasceste:** Natal, Rio Grande do Norte, Brasil 🇧🇷\n- **Interesse:** Tesla Model 3 🚗⚡\n\nTudo bem contigo? Em que posso te ajudar hoje? 🚀"
+    },
+    {
+        "role": "user",
+        "content": "oi!"
+    },
+    {
+        "role": "user",
+        "content": "Oi, Renato! 👋😄\n\nTudo bem? Como estás?\n\nEm que posso te ajudar hoje? 💬🚀"
+    },
+    {
+        "role": "user",
+        "content": "ola claude"
+    },
+    {
+        "role": "assistant",
+        "content": "Olá, Renato! 👋😄\n\nTudo bem contigo? Como estás em Lisboa?\n\nConta-me, em que posso te ajudar hoje? 💬🚀"
     }
 ]

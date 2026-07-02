@@ -1,0 +1,82 @@
+[
+  {
+    "nome": "Ana Silva",
+    "nota": 8.5
+  },
+  {
+    "nome": "Bruno Costa",
+    "nota": 7.0
+  },
+  {
+    "nome": "Carlos Mendes",
+    "nota": 9.2
+  },
+  {
+    "nome": "Daniela Alves",
+    "nota": 6.8
+  },
+  {
+    "nome": "Eduardo Santos",
+    "nota": 5.5
+  },
+  {
+    "nome": "Fernanda Lima",
+    "nota": 8.0
+  },
+  {
+    "nome": "Gabriel Pereira",
+    "nota": 7.8
+  },
+  {
+    "nome": "Helena Souza",
+    "nota": 9.5
+  },
+  {
+    "nome": "Igor Rocha",
+    "nota": 6.0
+  },
+  {
+    "nome": "Juliana Martins",
+    "nota": 8.7
+  },
+  {
+    "nome": "Lucas Ferreira",
+    "nota": 7.5
+  },
+  {
+    "nome": "Mariana Ribeiro",
+    "nota": 9.0
+  },
+  {
+    "nome": "Nicolas Oliveira",
+    "nota": 6.5
+  },
+  {
+    "nome": "Olivia Castro",
+    "nota": 8.2
+  },
+  {
+    "nome": "Pedro Carvalho",
+    "nota": 7.2
+  },
+  {
+    "nome": "Quintino Neves",
+    "nota": 5.8
+  },
+  {
+    "nome": "Rafaela Gomes",
+    "nota": 8.9
+  },
+  {
+    "nome": "Samuel Dias",
+    "nota": 9.8
+  },
+  {
+    "nome": "Tatiana Barbosa",
+    "nota": 6.9
+  },
+  {
+    "nome": "Vitor Barros",
+    "nota": 7.7
+  }
+]

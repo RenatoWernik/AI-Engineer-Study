@@ -42,7 +42,7 @@ while loop_key:
         historico_copy = historico[-10:]
         if historico_copy[0]["role"] == "assistant":
             historico_copy.pop(0)
-            .
+            
         try:
             #Chamada da API com historico atualizado do ultimo prompt
             assistant_answer = client.messages.create(
@@ -61,6 +61,6 @@ while loop_key:
             #Adicionar a resposta do assistant para o historico.
             historico.append({"role":"assistant","content":assistant_answer.content[0].text})
 
-with open(data_file,"w",encoding ="utf-8") as f:
+with open(data_file,"w",encoding ="utf-8") as f: #salvar_historico(historico, data_file)
     #Passando conversa completa para o arquivo json.
-    json.dump(historico,f,indent=4,ensure_ascii=False)       
+    json.dump(historico,f,indent=4,ensure_ascii=False)        

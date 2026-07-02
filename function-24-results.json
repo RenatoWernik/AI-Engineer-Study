@@ -1,0 +1,102 @@
+[
+    {
+        "nome": "Ana Silva",
+        "nota": 8.5,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Bruno Costa",
+        "nota": 7.0,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Carlos Mendes",
+        "nota": 9.2,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Daniela Alves",
+        "nota": 6.8,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Eduardo Santos",
+        "nota": 5.5,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Fernanda Lima",
+        "nota": 8.0,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Gabriel Pereira",
+        "nota": 7.8,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Helena Souza",
+        "nota": 9.5,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Igor Rocha",
+        "nota": 6.0,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Juliana Martins",
+        "nota": 8.7,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Lucas Ferreira",
+        "nota": 7.5,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Mariana Ribeiro",
+        "nota": 9.0,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Nicolas Oliveira",
+        "nota": 6.5,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Olivia Castro",
+        "nota": 8.2,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Pedro Carvalho",
+        "nota": 7.2,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Quintino Neves",
+        "nota": 5.8,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Rafaela Gomes",
+        "nota": 8.9,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Samuel Dias",
+        "nota": 9.8,
+        "Situação": "aprovado"
+    },
+    {
+        "nome": "Tatiana Barbosa",
+        "nota": 6.9,
+        "Situação": "reprovado"
+    },
+    {
+        "nome": "Vitor Barros",
+        "nota": 7.7,
+        "Situação": "aprovado"
+    }
+]
