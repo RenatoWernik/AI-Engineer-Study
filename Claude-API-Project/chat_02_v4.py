@@ -29,7 +29,11 @@ class AIChat:
     def load_history(self):
         if os.path.exists(self.history_file):
             with open(self.history_file,"r",encoding="utf-8") as f:
-                content = json.load(f) # Ler o arquivo - TRAZER para o Python
+                try:
+                    content = json.load(f) # Ler o arquivo - TRAZER para o Python
+                except json.JSONDecodeError:
+                    print("Aviso: O arquivo de histórico está corrompido ou vazio. Iniciando um novo chat limpo.")
+                    content = []
         else:
             print("É necessario criar o arquivo primeiro.")
             content = []
@@ -45,7 +49,6 @@ class AIChat:
                 max_tokens=1000,
                 messages=sliced_history
             )
-            print(assistant_answer.content[0].text)
             return assistant_answer.content[0].text
         except APIError as e:
             print(f"Erro com a API do Claude,tente novamente. {e}")
@@ -70,6 +73,7 @@ class AIChat:
                     print("A API falhou,desfazendo a mensagem...")
                     self.history.pop()
                 else:
+                    print(answer)
                     self.history.append({"role":"assistant","content":answer})
         self.save_history()
 
