@@ -1,4 +1,3 @@
-import json
 def juntar_falas(lista_suja):
     
     lista_otimizada = []

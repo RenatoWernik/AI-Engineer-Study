@@ -9,7 +9,7 @@ from anthropic import Anthropic,APIError
 
 load_dotenv()
 cl = Anthropic()
-arquivo = "dados/transcricao.vtt"
+#arquivo = "dados/transcricao.vtt"
 
 class Orquestrador:
     def __init__(self,cliente):
@@ -17,13 +17,13 @@ class Orquestrador:
         self.prompt_de_sistema = sys_prompt
 
          
-    def chamar_api(self):
+    def chamar_api(self,entrada):
         try:
             resposta = self.cliente.messages.create(
                 model = "claude-haiku-4-5-20251001",
                 max_tokens = 10000,
                 system = self.prompt_de_sistema,
-                messages = [{"role":"user","content":self.entrada}]
+                messages = [{"role":"user","content":entrada}]
             )
             texto_bruto = resposta.content[0].text
             return texto_bruto
@@ -32,20 +32,33 @@ class Orquestrador:
             print(f"Erro com a API: {e}")
             return None
     
-    def executar(self):
-        self.lista_suja = processar_transcricao(arquivo)
-        self.lista_limpa = juntar_falas(self.lista_suja)
-        self.entrada = formatar_lista(self.lista_limpa)
-        texto_bruto = self.chamar_api()
+    def executar(self,arquivo):
+        lista_suja = processar_transcricao(arquivo)
+        if not lista_suja: #se a lista vier vazia...
+            print("Erro: O arquivo da transcrição veio vazio.")
+            return None
+        lista_limpa = juntar_falas(lista_suja)
+        entrada = formatar_lista(lista_limpa)
+        #daqui para cima estamos tratando e limpando o arquivo de input para IA
+        #daqui para baixo estamos pegando a resposta(output) da IA,salvamos primeiro em texto_bruto
+        texto_bruto = self.chamar_api(entrada)
+        if texto_bruto is None: #valida se API funcionou.
+            print("Erro: A API não retornou texto válido")
+            return None
+        
         texto_sem_markdown = remover_markdown(texto_bruto)
         dicionario_final = converter_para_json(texto_sem_markdown)
+        if dicionario_final is None:
+            print("Não foi possivel converter para JSON")
+            return None
+        
         return dicionario_final
 
 
-
-chamada = Orquestrador(cl)
-resultado_final = chamada.executar()
-print(resultado_final)
+if __name__ == "__main__":
+    chamada = Orquestrador(cl)
+    resultado_final = chamada.executar("dados/transcricao.vtt")
+    print(resultado_final)
 
 
 
